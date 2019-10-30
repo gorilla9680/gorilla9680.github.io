@@ -6,7 +6,7 @@
   position: fixed;
   top: 0px;
 
-  background-color: #D5C7BC;
+  /* background-color: #D5C7BC; */
   z-index: 1;
 }
 
@@ -20,13 +20,12 @@
 .brand .hi {
   font-size: 14px;
   font-weight: 400;
+  overflow:hidden;
 
 }
 
 .brand .name {
-  font-size: 24px;
   font-weight: 800;
-  line-height: 26px;
 }
 
 
@@ -54,6 +53,28 @@
 .navigation li a:hover {
   color: red;
 }
+
+[data-aos="name"] {
+    font-size: 24px;
+    line-height: 26px;
+    transition-property: font-size, line-height;
+    transition: 0.3s ease-out;
+}
+[data-aos="name"].aos-animate {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+[data-aos="hi"] {
+    height:20px;
+    transition-property: height;
+    transition: 0.3s ease-out;
+}
+[data-aos="hi"].aos-animate {
+    height:0px;
+}
+
+/* Section 1 and scroll CTA */
 
 .center-text {
   text-align: left;
@@ -87,6 +108,8 @@
   font-weight: 300;
 
 }
+
+/* Section 2 for featured projects */
 
 .featured-projects {
 
