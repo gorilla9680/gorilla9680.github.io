@@ -81,13 +81,13 @@
 
 .center-text {
   text-align: left;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 600;
 
-  line-height: 56px;
+  line-height: 62px;
 
 
-  width: 900px;
+  width: 1200px;
   margin: auto;
 
   position: relative;
@@ -100,7 +100,7 @@
   height: 100px;
   margin: auto;
 
-  top: 350px;
+  top: 400px;
 }
 
 .see-more .text {
@@ -143,7 +143,7 @@
 
   position: relative;
 
-  top: 150px;
+  top: 200px;
 
   display: flex;
   justify-content: center;
@@ -168,24 +168,24 @@
 }
 
 .long {
-  width: 300px;
-  height: 500px;
+  width: 350px;
+  height: 583px;
 
 }
 
 .medium {
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 466px;
 }
 
 .short {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 }
 
 .wide {
-  width: 980px;
-  height: 300px;
+  width: 1130px;
+  height: 350px;
 }
 
 .card:hover {
@@ -199,24 +199,24 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .long #project-image{
-  width: 300px;
-  height: 500px;
+  width: 350px;
+  height: 583px;
 }
 
 .medium #project-image{
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 466px;
 }
 
 .short #project-image{
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 }
 
 .long #project-gradient{
   position: absolute;
-  width: 300px;
-  height: 500px;
+  width: 350px;
+  height: 583px;
 
   background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1));
 
@@ -227,8 +227,8 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 
 .medium #project-gradient{
   position: absolute;
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 466px;
 
   background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1));
 
