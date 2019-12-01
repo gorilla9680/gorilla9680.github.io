@@ -5,5 +5,4 @@ $(document).ready(function(){
           scrollTop: $("#scroll-here").offset().top},
           700);
   });
-
 });

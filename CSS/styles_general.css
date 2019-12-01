@@ -11,3 +11,7 @@ body{
 
   background-color: #D5C7BC;
 }
+
+section {
+  z-index: -200;
+}
