@@ -35,7 +35,7 @@
 .navigation {
   list-style-type: none;
   margin: 0;
-  padding: 30px 40px;
+  padding: 40px 40px;
 
   font-size: 14px;
   font-weight: 400;
@@ -54,18 +54,39 @@
 }
 
 .navigation li a:hover {
-  color: red;
+  color: orange;
+}
+
+[data-aos="nav-bg"] {
+
+  background-color: rgba(46,44,47,0);
+  transition-property: background-color;
+  transition: 0.3s ease-out;
+}
+[data-aos="nav-bg"].aos-animate {
+  background: rgba(46,44,47,1);
 }
 
 [data-aos="name"] {
   font-size: 24px;
   line-height: 26px;
-  transition-property: font-size, line-height;
+  color: black;
+  transition-property: font-size, line-height, color;
   transition: 0.3s ease-out;
 }
 [data-aos="name"].aos-animate {
   font-size: 18px;
   line-height: 20px;
+  color: white;
+}
+
+[data-aos="l-color"] {
+  color: black;
+  transition-property: color;
+  transition: 0.3s ease-out;
+}
+[data-aos="l-color"].aos-animate {
+  color: white;
 }
 
 [data-aos="hi"] {
@@ -151,7 +172,7 @@
 
 .project-spacer {
   width: 100%;
-  height: 60px;
+  height: 20px;
 }
 
 .featured-projects .card {
@@ -213,6 +234,11 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
   height: 350px;
 }
 
+.wide #project-image{
+  width: 1130px;
+  height: 350px;
+}
+
 .long #project-gradient{
   position: absolute;
   width: 350px;
@@ -239,8 +265,20 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 
 .short #project-gradient{
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
+
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1));
+
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.wide #project-gradient{
+  position: absolute;
+  width: 1130px;
+  height: 350px;
 
   background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1));
 
@@ -257,7 +295,7 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 
   position: relative;
   text-align: left;
-  top: 400px;
+  top: 500px;
   left: 20px;
 
   color: white;
@@ -266,14 +304,14 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .card:hover .long-text {
-  top: 330px;
+  top: 410px;
 }
 
 .medium-text {
 
   position: relative;
   text-align: left;
-  top: 300px;
+  top: 380px;
   left: 20px;
 
   color: white;
@@ -282,14 +320,14 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .card:hover .medium-text {
-  top: 230px;
+  top: 290px;
 }
 
 .short-text {
 
   position: relative;
   text-align: left;
-  top: 200px;
+  top: 260px;
   left: 20px;
 
   color: white;
@@ -298,7 +336,23 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .card:hover .short-text {
-  top: 130px;
+  top: 170px;
+}
+
+.wide-text {
+
+  position: relative;
+  text-align: left;
+  top: 260px;
+  left: 20px;
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.card:hover .wide-text {
+  top: 170px;
 }
 
 .featured-projects .title {
@@ -329,4 +383,20 @@ box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.08);
 
   width: 20px;
 
+}
+
+.footer {
+  height: 50px;
+  background: rgba(46,44,47,1);
+}
+
+.footer-text {
+
+  position: relative;
+
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  top: 15px;
 }

@@ -146,3 +146,19 @@ font-weight: 800;
 
   margin-top: 50px;
 }
+
+.footer {
+  height: 50px;
+  background: rgba(46,44,47,1);
+}
+
+.footer-text {
+
+  position: relative;
+
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  top: 15px;
+}
