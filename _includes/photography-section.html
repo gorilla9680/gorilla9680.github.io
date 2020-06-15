@@ -1,0 +1,25 @@
+{% if site.data.settings.photography-home-items %}
+<!-- portfolio -->
+<section class="photographySection" id="photography">
+  <h2 class="text-center">PHOTOGRAPHY</h2>
+
+  <div class="photographyRow">
+    {% for item in site.data.settings.photography-home-items %}
+    <a class="photographyCard" href="{{ site.baseurl }}/{{ item.image }}">
+      <div class="position-relative hover-wrapper">
+        <img src="{{ site.baseurl }}/{{ item.cover-image }}" alt="portfolio-image">
+        <div class="hover-overlay">
+          <div class="hover-content">
+            <div class="title">{{item.album-name}}</div>
+            <i class="ti-arrow-right" style="font-size:12px"></i>
+          </div>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+  </div>
+
+  <a class = "seeMore" href="{{site.baseurl}}/portfolio"> VIEW MORE &nbsp<i class="ti-arrow-right" style="font-size:12px"></i> </a>
+</section>
+<!-- /portfolio -->
+{% endif %}

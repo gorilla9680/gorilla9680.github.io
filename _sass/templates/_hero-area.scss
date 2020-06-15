@@ -1,0 +1,157 @@
+.hero-area {
+  position: relative;
+  padding: 220px 0 0px;
+
+  height: 880px;
+
+  @include desktop-lg {
+    height: 820px;
+    padding: 250px 0 150px;
+  }
+
+  @include desktop {
+    height: 720px;
+    padding: 200px 0 150px;
+  }
+
+  @include tablet {
+    padding: 250px 0 150px;
+  }
+}
+
+.socialIconTray{
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+
+.socialIcon {
+  margin-left: 0px;
+  transition: 0.2s;
+}
+
+.socialIcon:hover {
+  margin-left: 5px;
+}
+
+.socialIcon a {
+  text-decoration: none;
+  color: white;
+
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.socialIcon a:hover {
+  text-decoration: none;
+  color: $secondary-color;
+
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.scrollDown {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+
+  width: 60px;
+
+  margin: auto;
+
+  left: 50%;
+  transform: translate(-50%,0);
+
+  transition: 0.2s;
+}
+
+.scrollDown:hover {
+  bottom: -25px;
+}
+
+h1{
+    position: relative;
+    z-index: 2;
+
+    margin-left: 200px;
+
+    @include desktop-lg {
+      margin-left: 150px;
+    }
+
+    @include desktop {
+      margin-left: 120px;
+      width: 700px;
+    }
+}
+
+.linkCTA {
+  margin-top: 20px;
+
+  margin-left: 200px;
+
+  @include desktop-lg {
+    margin-left: 150px;
+  }
+
+  @include desktop {
+    margin-left: 120px;
+  }
+}
+
+.layer {
+  position: absolute;
+  z-index: 1;
+}
+
+#l1 {
+  bottom: 0;
+  left: 0;
+}
+
+#l2 {
+  top: 190px;
+  left: -250px;
+}
+
+#l3 {
+  top: 200px;
+  left: 40%;
+}
+
+#l4 {
+  top: 200px;
+  right: 40%;
+}
+
+#l5 {
+  top: 100px;
+  right: -150px;
+}
+
+#l6 {
+  bottom: -20px;
+  left: 10%;
+}
+
+#l7 {
+  bottom: 100px;
+  left: 20%;
+}
+
+#l8 {
+  bottom: 160px;
+  right: 45%;
+}
+
+#l9 {
+  bottom: 100px;
+  right: -10px;
+}
+
+.layer-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
