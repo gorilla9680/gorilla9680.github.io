@@ -8,11 +8,11 @@ phone: ---
 address: ---
 
 menu:
-- {name: Design, link: '/portfolio/'}
-- {name: Photography, link: '/photography/'}
-- {name: Blog, link: '/blog/'}
-- {name: About, link: '/about/'}
-- {name: Contact, link: '/contact/'}
+- {name: Design, link: '/portfolio'}
+- {name: Photography, link: '/photography'}
+- {name: Blog, link: '/blog'}
+- {name: About, link: '/about'}
+- {name: Contact, link: '/contact'}
 
 #-------------------------------
 # Google Analytics Section
@@ -22,7 +22,7 @@ menu:
 
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
-google-analytics: # UA-XXXXXX-X
+google-analytics:  UA-130183591-1
 
 
 #-------------------------------
