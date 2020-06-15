@@ -1,0 +1,22 @@
+<!-- blog -->
+<section class="section blogSection" id="blog">
+  <h2 class="text-center">BLOG</h2>
+  <div class="blogRow">
+      {% for post in site.posts offset:0 limit:4 %}
+        <article class="blogCard">
+          <img class="rounded card-img-top" src="{{ site.baseurl }}/assets/images/blog/{{ post.image }}" alt="{{ post.title }}">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="{{ post.url | relative_url }}">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="{{ post.url | relative_url }}" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <a class = "seeMore" href="{{site.baseurl}}/portfolio"> VIEW MORE &nbsp<i class="ti-arrow-right" style="font-size:12px"></i> </a>
+</section>
+<!-- /blog -->

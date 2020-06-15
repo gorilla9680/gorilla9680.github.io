@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<!-- page title -->
+<section class="header">
+  <img src="{{site.baseurl}}/{{page.image-top}}" alt="">
+  <div class="project-title">
+    {{ page.title | escape }}
+  </div>
+</section>
+<!-- /page title -->
+
+<section>
+  <div class="projectBody">
+    <div class="row">
+      <div>
+        <div class="project-title">{{ page.title | escape }}</div>
+        <div class="project-one-liner">{{ page.one-liner | escape }}</div>
+        <p class="project-details">Published on {{ page.date | date: '%b %d, %Y' }} by <span class="text-primary">{{ page.author }}</span
+            class="text-primary"> in {% for type in page.design-type %}<span>{{ type }} </span>{% endfor %}</p>
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+
+<!-- blog -->
+<!-- /blog -->

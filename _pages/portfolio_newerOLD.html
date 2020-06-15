@@ -1,0 +1,50 @@
+---
+layout: page
+title: Portfolio
+---
+<!-- portfolio -->
+<section class="section">
+  <div class="container portfolioSize">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons">
+          <label class="btn btn-sm btn-primary active">
+            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+          </label>
+          {% for label in site.data.portfolio.portfolio-label %}
+          <label class="btn btn-sm btn-primary">
+            <input type="radio" name="shuffle-filter" value="{{ label.type }}" />{{ label.title }}
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="row shuffle-wrapper">
+      {% for design_project in site.design_projects %}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{% for design-type in design_project.design-type %}{% if forloop.first == true %}{% else %},{% endif %}&quot;{{ design-type.type }}&quot;{% endfor %}]">
+        <div class="position-relative rounded hover-wrapper">
+        <img src="{{ site.baseurl }}/{{ design_project.image-top }}" alt="{{ design_project.title }}" class="img-fluid rounded w-100 d-block">
+          <a class="hover-overlay" href="{{ design_project.url | relative_url }}">
+            <div class="hover-content">
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
+
+<!-- clients -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">My Clients</h2>
+      </div>
+    </div>
+    {% include client-slider.html %}
+  </div>
+</section>
+<!-- /clients -->
