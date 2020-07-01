@@ -42,7 +42,7 @@
   ga('send', 'pageview');
 </script>
 
-  <header class="navigation fixed-top">
+  <!-- <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand font-tertiary h3" href="/">
       
@@ -55,11 +55,11 @@
     </button>
 
     <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto"> -->
         <!-- <li class="nav-item active">
           <a class="nav-link" href="/">Home</a>
         </li> -->
-        
+        <!-- 
           <li class="nav-item ">
             <a class="nav-link" href="/portfolio">Design</a>
             <div class="animated-hover-box">
@@ -81,9 +81,9 @@
       </ul>
     </div>
   </nav>
-</header>
+</header> -->
 
-<!-- <header>
+<header>
 <nav class="menu-bar">
   <a class="menu-logo" href="/">
     Priyanshu Mukhopadhyay
@@ -113,18 +113,19 @@
     
   </ul>
 </nav>
-</header> -->
+</header>
 
 
   <!-- hero area -->
 <section class="hero-area">
-        <div class="hero-intro">
-          Hi, I'm
-          <div class="name">Priyanshu Mukhopadhyay</div>
-        </div>
-        <div class="hero-divider"></div>
-        <div class="hero-blurb">I build meaningful storytelling experiences that resonate with users through design and technology.</div>
-        <div class="linkCTA">MORE ABOUT ME <i class="ti-arrow-right" style="font-size:12px"></i></div>
+
+  <div class="hero-intro">Hi, I'm</div>
+  <div class="hero-intro name">Priyanshu Mukhopadhyay</div>
+  <div class="hero-divider"></div>
+  <div class="hero-blurb">I build meaningful storytelling experiences that resonate with users through design and technology.</div>
+
+  <div id="mySketch"></div>
+
   <!-- social icon -->
   <ul class="socialIconTray zindex-1">
     
@@ -139,9 +140,11 @@
   </ul>
   <!-- /social icon -->
 
-  <a href="#scrollStop1">
-    <img class="scrollDown fadeOut" id="scrollStop1" src="/assets/images/icons/scroll-down.png">
+  <a href="#scrollStop1" class="scrollDown" id="scrollStop1">
+    <div class="scrollDown-text">VIEW WORK</div>
+    <div class="scrollDown-arrow"><i class="ti-arrow-down "></i></div>
   </a>
+
 </section>
 <!-- /hero area -->
 
@@ -477,9 +480,6 @@
 
 
 
-
-
-
 <!-- <section class="portfolioDisplaySection" id="portfolio">
   <h2 class="text-center">DESIGN PROJECTS</h2>
 
@@ -768,14 +768,17 @@
   <!-- filter -->
   <script src="/assets/plugins/shuffle/shuffle.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+
   <!-- aos library -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
-  </script>
+  </script> -->
 
   <!-- Main Script -->
   <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/mySketch.js"></script>
 </body>
 
 </html>
