@@ -67,12 +67,6 @@
           </li>
         
           <li class="nav-item ">
-            <a class="nav-link" href="/blog">Blog</a>
-            <div class="animated-hover-box">
-            </div>
-          </li>
-        
-          <li class="nav-item ">
             <a class="nav-link" href="/about">About</a>
             <div class="animated-hover-box">
             </div>
@@ -98,13 +92,6 @@
       </li>
     
       <li class="menu-item">
-        <a href="/blog">Blog</a>
-        <div class="under-box">
-
-        </div>
-      </li>
-    
-      <li class="menu-item">
         <a href="/about">About</a>
         <div class="under-box">
 
@@ -124,6 +111,7 @@
   <div class="hero-divider"></div>
   <div class="hero-blurb">I build meaningful storytelling experiences that resonate with users through design and technology.</div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
   <div id="mySketch"></div>
 
   <!-- social icon -->
@@ -140,7 +128,7 @@
   </ul>
   <!-- /social icon -->
 
-  <a href="#scrollStop1" class="scrollDown" id="scrollStop1">
+  <a href="#scrollStop1" class="scrollDown">
     <div class="scrollDown-text">VIEW WORK</div>
     <div class="scrollDown-arrow"><i class="ti-arrow-down "></i></div>
   </a>
@@ -373,14 +361,15 @@
 
 
 <!-- portfolio -->
+<div id="scrollStop1"></div>
 
 
 
 <section class="portfolio-project">
 
 <div class="project-box">
-<img src="/assets/images/portfolio/Tuntunis_Adventure/homepage-cover.jpg" class="project-image" alt="Tuntuni's Adventure-image">
-<div class="project-details">
+<img src="/assets/images/portfolio/Tuntunis_Adventure/homepage-cover.jpg" data-aos="fade-in" class="project-image" alt="Tuntuni's Adventure-image">
+<div class="project-details" data-aos="fade-up">
   <div class="project-name">
     Tuntuni's Adventure
   </div>
@@ -401,12 +390,11 @@
 
 
 
-
 <section class="portfolio-project">
 
 <div class="project-box">
-<img src="/assets/images/portfolio/Gesture_Glove_Experiment/homepage-cover.jpg" class="project-image" alt="Gesture Glove Experiment-image">
-<div class="project-details">
+<img src="/assets/images/portfolio/Gesture_Glove_Experiment/homepage-cover.jpg" data-aos="fade-in" class="project-image" alt="Gesture Glove Experiment-image">
+<div class="project-details" data-aos="fade-up">
   <div class="project-name">
     Gesture Glove Experiment
   </div>
@@ -427,12 +415,11 @@
 
 
 
-
 <section class="portfolio-project">
 
 <div class="project-box">
-<img src="/assets/images/portfolio/WHO_Booklets/homepage-cover.jpg" class="project-image" alt="STEPS & GSHS Booklets-image">
-<div class="project-details">
+<img src="/assets/images/portfolio/WHO_Booklets/homepage-cover.jpg" data-aos="fade-in" class="project-image" alt="STEPS & GSHS Booklets-image">
+<div class="project-details" data-aos="fade-up">
   <div class="project-name">
     STEPS & GSHS Booklets
   </div>
@@ -453,12 +440,11 @@
 
 
 
-
 <section class="portfolio-project">
 
 <div class="project-box">
-<img src="/assets/images/portfolio/HDFC_Smartbuy/homepage-cover.jpg" class="project-image" alt="HDFC Smartbuy-image">
-<div class="project-details">
+<img src="/assets/images/portfolio/HDFC_Smartbuy/homepage-cover.jpg" data-aos="fade-in" class="project-image" alt="HDFC Smartbuy-image">
+<div class="project-details" data-aos="fade-up">
   <div class="project-name">
     HDFC Smartbuy
   </div>
@@ -476,7 +462,6 @@
 </div>
 
 </section>
-
 
 
 
@@ -768,13 +753,11 @@
   <!-- filter -->
   <script src="/assets/plugins/shuffle/shuffle.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-
   <!-- aos library -->
-  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
-  </script> -->
+  </script>
 
   <!-- Main Script -->
   <script src="/assets/js/script.js"></script>
