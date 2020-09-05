@@ -23,6 +23,9 @@
   <!-- Main Stylesheet -->
   <link href="/assets/css/style.css" rel="stylesheet">
 
+  <!-- code snippet color -->
+  <link href="/assets/css/syntax.css" rel="stylesheet" >
+
   <!--Favicon-->
   <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
@@ -105,11 +108,12 @@
 
   <!-- page header -->
 <section class="header">
+
   <div class="project-sketch">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
     <script src="/assets/js/project_backgrounds/tuntunis-adventure.js"></script>
     <div id=tuntunis-adventure></div>
   </div>
+
   <div class="project-intro">
     <div class="project-title">Gesture Glove Experiment</div>
     <div class="project-one-liner">A wearable controller experiment to understand three dimensional interactions on a two dimensional space.</div>
@@ -120,7 +124,7 @@
       </div>
       <div class="item">
         <div class="specific-name">why</div>
-        <div class="specific-data">Module Project</div>
+        <div class="specific-data">Classroom Project</div>
       </div>
       <div class="item">
         <div class="specific-name">capacity</div>
@@ -155,17 +159,33 @@
 
 <p><img src="/assets/images/portfolio/Gesture_Glove_Experiment/blueprint.jpg" alt="post-thumb" class="processImage" /></p>
 
+<div class="language-java project-code highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  <span class="n">thumb</span>  <span class="o">=</span> <span class="n">map</span><span class="o">(</span><span class="n">blue</span><span class="o">.</span><span class="na">analogRead</span><span class="o">(</span><span class="mi">7</span><span class="o">),</span> <span class="mi">300</span><span class="o">,</span> <span class="mi">450</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
+  <span class="n">index</span>  <span class="o">=</span> <span class="n">map</span><span class="o">(</span><span class="n">blue</span><span class="o">.</span><span class="na">analogRead</span><span class="o">(</span><span class="mi">6</span><span class="o">),</span> <span class="mi">300</span><span class="o">,</span> <span class="mi">450</span><span class="o">,</span> <span class="mi">30</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+  <span class="n">middle</span> <span class="o">=</span> <span class="n">map</span><span class="o">(</span><span class="n">blue</span><span class="o">.</span><span class="na">analogRead</span><span class="o">(</span><span class="mi">5</span><span class="o">),</span> <span class="mi">300</span><span class="o">,</span> <span class="mi">450</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">255</span><span class="o">);</span>
+  <span class="n">ring</span>   <span class="o">=</span> <span class="n">map</span><span class="o">(</span><span class="n">blue</span><span class="o">.</span><span class="na">analogRead</span><span class="o">(</span><span class="mi">4</span><span class="o">),</span> <span class="mi">300</span><span class="o">,</span> <span class="mi">450</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">255</span><span class="o">);</span>
+  <span class="n">little</span> <span class="o">=</span> <span class="n">map</span><span class="o">(</span><span class="n">blue</span><span class="o">.</span><span class="na">analogRead</span><span class="o">(</span><span class="mi">3</span><span class="o">),</span> <span class="mi">300</span><span class="o">,</span> <span class="mi">450</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">255</span><span class="o">);</span>
+
+  <span class="n">thumb</span>  <span class="o">=</span> <span class="n">constrain</span><span class="o">(</span><span class="n">thumb</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
+  <span class="n">index</span>  <span class="o">=</span> <span class="n">constrain</span><span class="o">(</span><span class="n">index</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">30</span><span class="o">);</span>
+  <span class="n">middle</span> <span class="o">=</span> <span class="n">constrain</span><span class="o">(</span><span class="n">middle</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">255</span><span class="o">);</span>
+  <span class="n">ring</span>   <span class="o">=</span> <span class="n">constrain</span><span class="o">(</span><span class="n">ring</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">255</span><span class="o">);</span>
+  <span class="n">little</span> <span class="o">=</span> <span class="n">constrain</span><span class="o">(</span><span class="n">little</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">255</span><span class="o">);</span>
+
+  <span class="n">stroke</span><span class="o">(</span><span class="n">middle</span><span class="o">,</span> <span class="n">ring</span><span class="o">,</span> <span class="n">little</span><span class="o">);</span>
+  <span class="n">strokeWeight</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+
+</code></pre></div></div>
+
 <p class="project-subheader">Execution</p>
 
 <p class="project-text">The degree in which fingers were bent became responsible for attributes like color(r,g,b) and size of the drawing tool. Gestures/motions in air became responsible for the direction of the cursor on the digital screen.</p>
 
-<p><img src="/assets/images/portfolio/Gesture_Glove_Experiment/2.jpg" alt="post-thumb" class="processImage" /></p>
+<p><img src="/assets/images/portfolio/Gesture_Glove_Experiment/glove-interface.jpg" alt="post-thumb" class="processImage" /></p>
 
 <p class="project-subheader">User Testing</p>
 
 <p class="project-text">The degree in which fingers were bent became responsible for attributes like color(r,g,b) and size of the drawing tool. Gestures/motions in air became responsible for the direction of the cursor on the digital screen.</p>
-
-<p><img src="/assets/images/portfolio/Gesture_Glove_Experiment/1.jpg" alt="post-thumb" class="processImage" /></p>
 
 <p><img src="/assets/images/portfolio/Gesture_Glove_Experiment/canvas-1.jpg" alt="post-thumb" class="processImage" /></p>
 
@@ -215,6 +235,8 @@
   <script src="/assets/plugins/slick/slick.min.js"></script>
   <!-- filter -->
   <script src="/assets/plugins/shuffle/shuffle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
 
   <!-- aos library -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
